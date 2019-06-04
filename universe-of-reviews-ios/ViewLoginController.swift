@@ -10,10 +10,14 @@ import UIKit
 
 class ViewLoginController: UIViewController {
 
+    @IBOutlet weak var btnLogin: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+    }
+    @IBAction func btnLoginClick(_ sender: UIButton) {
+        
     }
     
 

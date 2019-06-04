@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1AB68D9822A639DD0081F626 /* ViewLoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB68D9722A639DD0081F626 /* ViewLoginController.swift */; };
+		1AB68D9A22A63F740081F626 /* ViewPublicationsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB68D9922A63F740081F626 /* ViewPublicationsController.swift */; };
 		50E8813922A610D1006C8760 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E8813822A610D1006C8760 /* AppDelegate.swift */; };
 		50E8813B22A610D1006C8760 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E8813A22A610D1006C8760 /* ViewController.swift */; };
 		50E8813E22A610D1006C8760 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50E8813C22A610D1006C8760 /* Main.storyboard */; };
@@ -15,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1AB68D9722A639DD0081F626 /* ViewLoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewLoginController.swift; sourceTree = "<group>"; };
+		1AB68D9922A63F740081F626 /* ViewPublicationsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewPublicationsController.swift; sourceTree = "<group>"; };
 		50E8813522A610D1006C8760 /* universe-of-reviews-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "universe-of-reviews-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		50E8813822A610D1006C8760 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		50E8813A22A610D1006C8760 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -60,6 +64,8 @@
 				50E8813F22A610D4006C8760 /* Assets.xcassets */,
 				50E8814122A610D4006C8760 /* LaunchScreen.storyboard */,
 				50E8814422A610D4006C8760 /* Info.plist */,
+				1AB68D9722A639DD0081F626 /* ViewLoginController.swift */,
+				1AB68D9922A63F740081F626 /* ViewPublicationsController.swift */,
 			);
 			path = "universe-of-reviews-ios";
 			sourceTree = "<group>";
@@ -136,6 +142,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				50E8813B22A610D1006C8760 /* ViewController.swift in Sources */,
+				1AB68D9822A639DD0081F626 /* ViewLoginController.swift in Sources */,
+				1AB68D9A22A63F740081F626 /* ViewPublicationsController.swift in Sources */,
 				50E8813922A610D1006C8760 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

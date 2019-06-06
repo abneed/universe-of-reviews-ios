@@ -61,10 +61,24 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bgFondo2" translatesAutoresizingMaskIntoConstraints="NO" id="55b-AA-ktT">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="414" id="XzM-pK-j0W"/>
+                                    <constraint firstAttribute="height" constant="896" id="w30-uK-Wkv"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bgBlanco" translatesAutoresizingMaskIntoConstraints="NO" id="yDq-fX-sjU">
+                                <rect key="frame" x="87" y="265" width="240" height="310"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="Oc9-We-kgb"/>
+                                    <constraint firstAttribute="height" constant="310" id="nIP-Vx-DsY"/>
+                                </constraints>
+                            </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="33" translatesAutoresizingMaskIntoConstraints="NO" id="jAc-Cz-7va">
                                 <rect key="frame" x="102" y="370" width="210" height="156"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Correo electrónico" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="v6q-9g-IAZ">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Correo electrónico" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="v6q-9g-IAZ" customClass="LoginTextField" customModule="universe_of_reviews_ios" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="210" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="210" id="H5s-th-DL5"/>
@@ -74,7 +88,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Contraseña" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yfj-xe-OA3">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Contraseña" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yfj-xe-OA3" customClass="LoginTextField" customModule="universe_of_reviews_ios" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="63" width="210" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="OLl-cc-VKy"/>
@@ -98,11 +112,14 @@
                                 </subviews>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" red="0.08544302829" green="0.5" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <color key="tintColor" red="1" green="0.89014852889999996" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="55b-AA-ktT" firstAttribute="centerY" secondItem="y3r-eM-zWb" secondAttribute="centerY" id="5Rw-cI-MCL"/>
+                            <constraint firstItem="yDq-fX-sjU" firstAttribute="centerX" secondItem="y3r-eM-zWb" secondAttribute="centerX" id="TT6-TW-hUZ"/>
+                            <constraint firstItem="55b-AA-ktT" firstAttribute="centerX" secondItem="y3r-eM-zWb" secondAttribute="centerX" id="dtv-cS-Fi1"/>
                             <constraint firstItem="jAc-Cz-7va" firstAttribute="centerY" secondItem="y3r-eM-zWb" secondAttribute="centerY" id="eIP-86-8nw"/>
                             <constraint firstItem="jAc-Cz-7va" firstAttribute="centerX" secondItem="y3r-eM-zWb" secondAttribute="centerX" id="jvy-Pd-8bv"/>
+                            <constraint firstItem="yDq-fX-sjU" firstAttribute="centerY" secondItem="y3r-eM-zWb" secondAttribute="centerY" constant="-28" id="nqC-R5-fpe"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="w0A-1D-l5Q"/>
                     </view>
@@ -164,4 +181,8 @@
             <point key="canvasLocation" x="2035" y="1409"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="bgBlanco" width="500" height="800"/>
+        <image name="bgFondo2" width="861" height="1580"/>
+    </resources>
 </document>

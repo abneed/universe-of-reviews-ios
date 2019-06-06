@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="KWD-6b-8IB">
-    <device id="retina6_1" orientation="portrait">
+    <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -10,31 +10,62 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Publicar reseña-->
         <scene sceneID="LWY-hd-bkd">
             <objects>
                 <viewController id="ZjP-SI-CNh" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ut5-eT-fl0">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iaQ-rt-57c">
+                                <rect key="frame" x="139" y="112" width="97" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ar7-05-rXJ">
+                                <rect key="frame" x="139" y="150" width="97" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tet-MO-ieG">
+                                <rect key="frame" x="139" y="188" width="97" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uQo-Wk-c6Y">
+                                <rect key="frame" x="139" y="226" width="97" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="559-gV-Pre"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Publicar reseña" id="rFm-eQ-FYi"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wUt-ic-Aaa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2035" y="56"/>
         </scene>
-        <!--View Controller-->
+        <!--Reseñas-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="universe_of_reviews_ios" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hola mundo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xjt-wH-712">
-                                <rect key="frame" x="161" y="437.5" width="92.5" height="21"/>
+                                <rect key="frame" x="141.5" y="323" width="92.5" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -47,7 +78,20 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" id="IrH-hc-jFh"/>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Reseñas" id="6dz-hw-IPa">
+                        <barButtonItem key="leftBarButtonItem" title="Configuraciones" image="configuracion" id="kPB-DD-FhE">
+                            <connections>
+                                <segue destination="5Yn-27-ju0" kind="show" id="XQb-tq-XKR"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Crear reseña" id="01I-eD-me4">
+                            <connections>
+                                <segue destination="ZjP-SI-CNh" kind="show" id="GPW-cL-v7z"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -58,25 +102,25 @@
             <objects>
                 <viewController storyboardIdentifier="LoginViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="KWD-6b-8IB" customClass="LoginViewController" customModule="universe_of_reviews_ios" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="y3r-eM-zWb">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bgFondo2" translatesAutoresizingMaskIntoConstraints="NO" id="55b-AA-ktT">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <rect key="frame" x="-19.5" y="-114.5" width="414" height="896"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="414" id="XzM-pK-j0W"/>
                                     <constraint firstAttribute="height" constant="896" id="w30-uK-Wkv"/>
                                 </constraints>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bgBlanco" translatesAutoresizingMaskIntoConstraints="NO" id="yDq-fX-sjU">
-                                <rect key="frame" x="87" y="265" width="240" height="310"/>
+                                <rect key="frame" x="67.5" y="150.5" width="240" height="310"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="240" id="Oc9-We-kgb"/>
                                     <constraint firstAttribute="height" constant="310" id="nIP-Vx-DsY"/>
                                 </constraints>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="33" translatesAutoresizingMaskIntoConstraints="NO" id="jAc-Cz-7va">
-                                <rect key="frame" x="102" y="370" width="210" height="156"/>
+                                <rect key="frame" x="82.5" y="255.5" width="210" height="156"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="bottom" placeholder="Correo electrónico" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="v6q-9g-IAZ" customClass="LoginTextField" customModule="universe_of_reviews_ios" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="210" height="30"/>
@@ -149,7 +193,7 @@
                 <navigationController storyboardIdentifier="MainNavigationController" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="PeW-x7-NAA" customClass="MainNavigationController" customModule="universe_of_reviews_ios" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="66S-dO-vWH">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -166,7 +210,7 @@
             <objects>
                 <viewController id="C6f-r3-jMQ" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="DFw-dM-C3F">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="kWA-yE-jUr"/>
@@ -176,24 +220,26 @@
             </objects>
             <point key="canvasLocation" x="2035" y="749"/>
         </scene>
-        <!--View Controller-->
+        <!--Configuraciones-->
         <scene sceneID="Vgc-WV-ghV">
             <objects>
                 <viewController id="5Yn-27-ju0" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Fz9-UN-try">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="gBJ-Wc-poZ"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Configuraciones" id="h46-H5-l2V"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9sw-k9-nWC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2035" y="1409"/>
+            <point key="canvasLocation" x="2034" y="1518"/>
         </scene>
     </scenes>
     <resources>
         <image name="bgBlanco" width="500" height="800"/>
         <image name="bgFondo2" width="861" height="1580"/>
+        <image name="configuracion" width="32" height="32"/>
     </resources>
 </document>

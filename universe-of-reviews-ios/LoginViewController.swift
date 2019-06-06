@@ -16,6 +16,13 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(tapGestureHandler))
+        view.addGestureRecognizer(tapGesture)
+    }
+    
+    @objc func tapGestureHandler() {
+        txtEmail.endEditing(true)
+        txtPassword.endEditing(true)
     }
     
     @IBAction func loginTapped(_ sender: Any) {

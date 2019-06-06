@@ -78,7 +78,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="33" translatesAutoresizingMaskIntoConstraints="NO" id="jAc-Cz-7va">
                                 <rect key="frame" x="102" y="370" width="210" height="156"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Correo electrónico" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="v6q-9g-IAZ" customClass="LoginTextField" customModule="universe_of_reviews_ios" customModuleProvider="target">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="bottom" placeholder="Correo electrónico" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="v6q-9g-IAZ" customClass="LoginTextField" customModule="universe_of_reviews_ios" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="210" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="210" id="H5s-th-DL5"/>
@@ -86,9 +86,9 @@
                                         </constraints>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="emailAddress" keyboardAppearance="alert" textContentType="email"/>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Contraseña" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yfj-xe-OA3" customClass="LoginTextField" customModule="universe_of_reviews_ios" customModuleProvider="target">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="bottom" placeholder="Contraseña" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yfj-xe-OA3" customClass="LoginTextField" customModule="universe_of_reviews_ios" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="63" width="210" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="OLl-cc-VKy"/>
@@ -96,7 +96,7 @@
                                         </constraints>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                        <textInputTraits key="textInputTraits" keyboardAppearance="alert" secureTextEntry="YES" textContentType="password"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0De-CK-UXp">
                                         <rect key="frame" x="60" y="126" width="90" height="30"/>
@@ -111,14 +111,25 @@
                                     </button>
                                 </subviews>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="El universo de las reseñas" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C6h-tT-Qmo">
+                                <rect key="frame" x="102" y="334" width="210" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="oLu-D9-phz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="55b-AA-ktT" firstAttribute="centerY" secondItem="y3r-eM-zWb" secondAttribute="centerY" id="5Rw-cI-MCL"/>
                             <constraint firstItem="yDq-fX-sjU" firstAttribute="centerX" secondItem="y3r-eM-zWb" secondAttribute="centerX" id="TT6-TW-hUZ"/>
+                            <constraint firstItem="C6h-tT-Qmo" firstAttribute="centerY" secondItem="y3r-eM-zWb" secondAttribute="centerY" constant="-96.5" id="XBP-yk-AC8"/>
                             <constraint firstItem="55b-AA-ktT" firstAttribute="centerX" secondItem="y3r-eM-zWb" secondAttribute="centerX" id="dtv-cS-Fi1"/>
                             <constraint firstItem="jAc-Cz-7va" firstAttribute="centerY" secondItem="y3r-eM-zWb" secondAttribute="centerY" id="eIP-86-8nw"/>
                             <constraint firstItem="jAc-Cz-7va" firstAttribute="centerX" secondItem="y3r-eM-zWb" secondAttribute="centerX" id="jvy-Pd-8bv"/>
+                            <constraint firstItem="C6h-tT-Qmo" firstAttribute="centerX" secondItem="y3r-eM-zWb" secondAttribute="centerX" id="neo-YG-yFZ"/>
                             <constraint firstItem="yDq-fX-sjU" firstAttribute="centerY" secondItem="y3r-eM-zWb" secondAttribute="centerY" constant="-28" id="nqC-R5-fpe"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="w0A-1D-l5Q"/>

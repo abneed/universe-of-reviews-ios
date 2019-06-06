@@ -19,10 +19,29 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func loginTapped(_ sender: Any) {
-        navigateToMainInterface()
+        let email = txtEmail.text!
+        let password = txtPassword.text!
+        let urlAuthenticate = "https://universe-of-reviews.herokuapp.com/authenticate"
+        let params = "email=\(email)&password=\(password)"
+        
+        guard let url = URL(string: urlAuthenticate) else { return }
+        
+        var request = URLRequest(url: url)
+        request.httpMethod = "POST"
+        request.httpBody = params.data(using: .utf8) //Texto plpano del parametro lo convierte a data con el formato utf8
+        
+        URLSession.shared.dataTask(with: request)
+        {(data, response, error) in
+            DispatchQueue.main.async
+            {
+                guard response != nil else { return }
+                self.navigateToMainInterface()
+            }
+        }.resume()
     }
     
-    private func navigateToMainInterface(){
+    private func navigateToMainInterface() {
+        
         let mainStoryBoard = UIStoryboard(name: "Main", bundle: Bundle.main)
         
         guard let mainNavigationVC = mainStoryBoard.instantiateViewController(withIdentifier: "MainNavigationController") as? MainNavigationController else {

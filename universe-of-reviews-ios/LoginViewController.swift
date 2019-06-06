@@ -41,6 +41,8 @@ class LoginViewController: UIViewController {
         {(data, response, error) in
             DispatchQueue.main.async
             {
+                print(data!)
+                print(response!)
                 guard response != nil else { return }
                 self.navigateToMainInterface()
             }

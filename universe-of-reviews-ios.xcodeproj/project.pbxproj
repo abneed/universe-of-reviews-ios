@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		5053383A22A983D30096EDCC /* LoginTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5053383922A983D30096EDCC /* LoginTextField.swift */; };
+		5053383C22A986FF0096EDCC /* MainNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5053383B22A986FF0096EDCC /* MainNavigationController.swift */; };
+		5053384022A9885E0096EDCC /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5053383F22A9885E0096EDCC /* LoginViewController.swift */; };
 		50E8813922A610D1006C8760 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E8813822A610D1006C8760 /* AppDelegate.swift */; };
 		50E8813B22A610D1006C8760 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E8813A22A610D1006C8760 /* ViewController.swift */; };
 		50E8813E22A610D1006C8760 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50E8813C22A610D1006C8760 /* Main.storyboard */; };
@@ -17,6 +19,8 @@
 
 /* Begin PBXFileReference section */
 		5053383922A983D30096EDCC /* LoginTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTextField.swift; sourceTree = "<group>"; };
+		5053383B22A986FF0096EDCC /* MainNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavigationController.swift; sourceTree = "<group>"; };
+		5053383F22A9885E0096EDCC /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		50E8813522A610D1006C8760 /* universe-of-reviews-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "universe-of-reviews-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		50E8813822A610D1006C8760 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		50E8813A22A610D1006C8760 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -63,6 +67,8 @@
 				50E8814122A610D4006C8760 /* LaunchScreen.storyboard */,
 				50E8814422A610D4006C8760 /* Info.plist */,
 				5053383922A983D30096EDCC /* LoginTextField.swift */,
+				5053383B22A986FF0096EDCC /* MainNavigationController.swift */,
+				5053383F22A9885E0096EDCC /* LoginViewController.swift */,
 			);
 			path = "universe-of-reviews-ios";
 			sourceTree = "<group>";
@@ -140,6 +146,8 @@
 			files = (
 				5053383A22A983D30096EDCC /* LoginTextField.swift in Sources */,
 				50E8813B22A610D1006C8760 /* ViewController.swift in Sources */,
+				5053383C22A986FF0096EDCC /* MainNavigationController.swift in Sources */,
+				5053384022A9885E0096EDCC /* LoginViewController.swift in Sources */,
 				50E8813922A610D1006C8760 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

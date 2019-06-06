@@ -26,6 +26,10 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func loginTapped(_ sender: Any) {
+        
+        UserDefaults.standard.set(true, forKey: "status")
+        Switcher.updateRootVC()
+        
         let email = txtEmail.text!
         let password = txtPassword.text!
         let urlAuthenticate = "https://universe-of-reviews.herokuapp.com/authenticate"

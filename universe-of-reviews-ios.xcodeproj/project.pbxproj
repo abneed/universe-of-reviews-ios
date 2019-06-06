@@ -12,6 +12,8 @@
 		5053384022A9885E0096EDCC /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5053383F22A9885E0096EDCC /* LoginViewController.swift */; };
 		5075A50E22A9B08700D27DCB /* PostReviewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5075A50D22A9B08700D27DCB /* PostReviewController.swift */; };
 		5075A51222A9C49E00D27DCB /* Datos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5075A51122A9C49E00D27DCB /* Datos.swift */; };
+		5075A51422A9D93900D27DCB /* Switcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5075A51322A9D93900D27DCB /* Switcher.swift */; };
+		5075A51622A9D9B800D27DCB /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5075A51522A9D9B800D27DCB /* SettingsViewController.swift */; };
 		50E8813922A610D1006C8760 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E8813822A610D1006C8760 /* AppDelegate.swift */; };
 		50E8813B22A610D1006C8760 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E8813A22A610D1006C8760 /* ViewController.swift */; };
 		50E8813E22A610D1006C8760 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50E8813C22A610D1006C8760 /* Main.storyboard */; };
@@ -25,6 +27,8 @@
 		5053383F22A9885E0096EDCC /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		5075A50D22A9B08700D27DCB /* PostReviewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostReviewController.swift; sourceTree = "<group>"; };
 		5075A51122A9C49E00D27DCB /* Datos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Datos.swift; sourceTree = "<group>"; };
+		5075A51322A9D93900D27DCB /* Switcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Switcher.swift; sourceTree = "<group>"; };
+		5075A51522A9D9B800D27DCB /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		50E8813522A610D1006C8760 /* universe-of-reviews-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "universe-of-reviews-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		50E8813822A610D1006C8760 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		50E8813A22A610D1006C8760 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -75,6 +79,8 @@
 				5053383F22A9885E0096EDCC /* LoginViewController.swift */,
 				5075A50D22A9B08700D27DCB /* PostReviewController.swift */,
 				5075A51122A9C49E00D27DCB /* Datos.swift */,
+				5075A51322A9D93900D27DCB /* Switcher.swift */,
+				5075A51522A9D9B800D27DCB /* SettingsViewController.swift */,
 			);
 			path = "universe-of-reviews-ios";
 			sourceTree = "<group>";
@@ -152,11 +158,13 @@
 			files = (
 				5053383A22A983D30096EDCC /* LoginTextField.swift in Sources */,
 				50E8813B22A610D1006C8760 /* ViewController.swift in Sources */,
+				5075A51422A9D93900D27DCB /* Switcher.swift in Sources */,
 				5053383C22A986FF0096EDCC /* MainNavigationController.swift in Sources */,
 				5053384022A9885E0096EDCC /* LoginViewController.swift in Sources */,
 				5075A51222A9C49E00D27DCB /* Datos.swift in Sources */,
 				50E8813922A610D1006C8760 /* AppDelegate.swift in Sources */,
 				5075A50E22A9B08700D27DCB /* PostReviewController.swift in Sources */,
+				5075A51622A9D9B800D27DCB /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

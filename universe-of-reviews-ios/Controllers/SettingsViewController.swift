@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 import AudioToolbox
 
-class SettingsViewController: UIViewController {
+class SettingsViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
     
     @IBOutlet weak var txtFirstName: UITextField!
     @IBOutlet weak var txtLastName: UITextField!
@@ -20,6 +20,7 @@ class SettingsViewController: UIViewController {
     @IBOutlet weak var txtEmail: UITextField!
     @IBOutlet weak var txtPassword: UITextField!
     @IBOutlet weak var txtPasswordConfirmation: UITextField!
+    @IBOutlet weak var imgProfile: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -65,6 +66,29 @@ class SettingsViewController: UIViewController {
         txtEmail.endEditing(true)
         txtPassword.endEditing(true)
         txtPasswordConfirmation.endEditing(true)
+    }
+    
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any])
+    {
+        //Esto se convierte en un evento que se dispara cuando se elige una imagen.
+        if let pickedImage = info[UIImagePickerController.InfoKey.originalImage] as? UIImage
+        {
+            imgProfile.image = pickedImage
+            //WS //Para cargarloo en un control Imgage.
+        }
+        dismiss(animated: true, completion: nil) //Para que la galeria desaparesca una vez que elegí la imagen.
+    }
+    
+    @IBAction func btnChangeProfileImage(_ sender: Any) {
+        let myGallery = UIImagePickerController()
+        myGallery.delegate = self
+        myGallery.sourceType = UIImagePickerController.SourceType.photoLibrary //Fuente de la libreria sea la libreria
+        myGallery.allowsEditing = false //No permita que yo le agregue imagenes a la galería desde la aplicacion.
+        self.present(myGallery, animated: true) //Presento la imagen.
+        {
+            //después será completado
+        }
     }
     
     @IBAction func btnSaveChanges(_ sender: Any) {

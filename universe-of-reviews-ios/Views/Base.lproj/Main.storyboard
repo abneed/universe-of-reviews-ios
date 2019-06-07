@@ -426,6 +426,9 @@
                                     <constraint firstAttribute="width" constant="150" id="hEC-Uj-59m"/>
                                 </constraints>
                                 <state key="normal" title="Cambiar foto de perfil"/>
+                                <connections>
+                                    <action selector="btnChangeProfileImage:" destination="5Yn-27-ju0" eventType="touchUpInside" id="Qy2-NL-aDW"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6ax-LL-ZWY">
                                 <rect key="frame" x="139" y="221" width="220" height="30"/>
@@ -657,6 +660,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Configuraciones" id="h46-H5-l2V"/>
                     <connections>
+                        <outlet property="imgProfile" destination="NsJ-04-7bl" id="Tud-sE-0Ed"/>
                         <outlet property="txtBirthDate" destination="17X-1H-qKO" id="aLo-ft-VRZ"/>
                         <outlet property="txtEmail" destination="aL1-YF-mj2" id="LgQ-vD-Fb4"/>
                         <outlet property="txtFirstName" destination="6ax-LL-ZWY" id="AcZ-v7-Tm3"/>

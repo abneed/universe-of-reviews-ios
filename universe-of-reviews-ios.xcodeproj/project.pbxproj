@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A257A7022AA12F900790345 /* DetailReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A257A6F22AA12F900790345 /* DetailReviewViewController.swift */; };
 		5053383A22A983D30096EDCC /* LoginTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5053383922A983D30096EDCC /* LoginTextField.swift */; };
 		5053383C22A986FF0096EDCC /* MainNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5053383B22A986FF0096EDCC /* MainNavigationController.swift */; };
 		5053384022A9885E0096EDCC /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5053383F22A9885E0096EDCC /* LoginViewController.swift */; };
@@ -24,6 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1A257A6F22AA12F900790345 /* DetailReviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailReviewViewController.swift; sourceTree = "<group>"; };
 		5053383922A983D30096EDCC /* LoginTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTextField.swift; sourceTree = "<group>"; };
 		5053383B22A986FF0096EDCC /* MainNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavigationController.swift; sourceTree = "<group>"; };
 		5053383F22A9885E0096EDCC /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -91,6 +93,7 @@
 				5075A51322A9D93900D27DCB /* Switcher.swift */,
 				5075A51522A9D9B800D27DCB /* SettingsViewController.swift */,
 				5075A51722A9DC5800D27DCB /* Session.swift */,
+				1A257A6F22AA12F900790345 /* DetailReviewViewController.swift */,
 			);
 			path = "universe-of-reviews-ios";
 			sourceTree = "<group>";
@@ -109,7 +112,6 @@
 				9C1E06071FFEF5DC81A665BA /* Pods-universe-of-reviews-ios.debug.xcconfig */,
 				D8ED44A3A79CDFD243FD98AD /* Pods-universe-of-reviews-ios.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -236,6 +238,7 @@
 				5075A51822A9DC5800D27DCB /* Session.swift in Sources */,
 				5053383A22A983D30096EDCC /* LoginTextField.swift in Sources */,
 				50E8813B22A610D1006C8760 /* ViewController.swift in Sources */,
+				1A257A7022AA12F900790345 /* DetailReviewViewController.swift in Sources */,
 				5075A51422A9D93900D27DCB /* Switcher.swift in Sources */,
 				5053383C22A986FF0096EDCC /* MainNavigationController.swift in Sources */,
 				5053384022A9885E0096EDCC /* LoginViewController.swift in Sources */,
@@ -390,7 +393,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = WFXCWZFAPP;
+				DEVELOPMENT_TEAM = 5WP89R9K6D;
 				INFOPLIST_FILE = "universe-of-reviews-ios/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -409,7 +412,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = WFXCWZFAPP;
+				DEVELOPMENT_TEAM = 5WP89R9K6D;
 				INFOPLIST_FILE = "universe-of-reviews-ios/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

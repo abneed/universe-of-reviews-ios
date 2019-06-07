@@ -10,6 +10,16 @@ import UIKit
 
 class DetailReviewViewController: UIViewController {
 
+    @IBOutlet weak var txtFechaEstreno: UILabel!
+    @IBOutlet weak var txtNombrePelicula: UILabel!
+    @IBOutlet weak var txtActores: UILabel!
+    @IBOutlet weak var txtDirector: UILabel!
+    @IBOutlet weak var txtGenero: UILabel!
+    @IBOutlet weak var txtPais: UILabel!
+    @IBOutlet weak var txtResena: UILabel!
+    @IBOutlet weak var tvComentarios: UITableView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

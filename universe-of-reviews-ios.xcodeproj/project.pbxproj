@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		1A257A7022AA12F900790345 /* DetailReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A257A6F22AA12F900790345 /* DetailReviewViewController.swift */; };
+		1ACF8A2222AA321C00BFD9AD /* ComentsViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ACF8A2022AA321B00BFD9AD /* ComentsViewCell.swift */; };
+		1ACF8A2322AA321C00BFD9AD /* ComentsViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1ACF8A2122AA321B00BFD9AD /* ComentsViewCell.xib */; };
 		5053383A22A983D30096EDCC /* LoginTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5053383922A983D30096EDCC /* LoginTextField.swift */; };
 		5053383C22A986FF0096EDCC /* MainNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5053383B22A986FF0096EDCC /* MainNavigationController.swift */; };
 		5053384022A9885E0096EDCC /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5053383F22A9885E0096EDCC /* LoginViewController.swift */; };
@@ -26,6 +28,8 @@
 
 /* Begin PBXFileReference section */
 		1A257A6F22AA12F900790345 /* DetailReviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailReviewViewController.swift; sourceTree = "<group>"; };
+		1ACF8A2022AA321B00BFD9AD /* ComentsViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComentsViewCell.swift; sourceTree = "<group>"; };
+		1ACF8A2122AA321B00BFD9AD /* ComentsViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ComentsViewCell.xib; sourceTree = "<group>"; };
 		5053383922A983D30096EDCC /* LoginTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTextField.swift; sourceTree = "<group>"; };
 		5053383B22A986FF0096EDCC /* MainNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavigationController.swift; sourceTree = "<group>"; };
 		5053383F22A9885E0096EDCC /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -94,6 +98,8 @@
 				5075A51522A9D9B800D27DCB /* SettingsViewController.swift */,
 				5075A51722A9DC5800D27DCB /* Session.swift */,
 				1A257A6F22AA12F900790345 /* DetailReviewViewController.swift */,
+				1ACF8A2022AA321B00BFD9AD /* ComentsViewCell.swift */,
+				1ACF8A2122AA321B00BFD9AD /* ComentsViewCell.xib */,
 			);
 			path = "universe-of-reviews-ios";
 			sourceTree = "<group>";
@@ -175,6 +181,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1ACF8A2322AA321C00BFD9AD /* ComentsViewCell.xib in Resources */,
 				50E8814322A610D4006C8760 /* LaunchScreen.storyboard in Resources */,
 				50E8814022A610D4006C8760 /* Assets.xcassets in Resources */,
 				50E8813E22A610D1006C8760 /* Main.storyboard in Resources */,
@@ -239,6 +246,7 @@
 				5053383A22A983D30096EDCC /* LoginTextField.swift in Sources */,
 				50E8813B22A610D1006C8760 /* ViewController.swift in Sources */,
 				1A257A7022AA12F900790345 /* DetailReviewViewController.swift in Sources */,
+				1ACF8A2222AA321C00BFD9AD /* ComentsViewCell.swift in Sources */,
 				5075A51422A9D93900D27DCB /* Switcher.swift in Sources */,
 				5053383C22A986FF0096EDCC /* MainNavigationController.swift in Sources */,
 				5053384022A9885E0096EDCC /* LoginViewController.swift in Sources */,

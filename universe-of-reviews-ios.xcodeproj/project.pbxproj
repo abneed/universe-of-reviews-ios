@@ -51,6 +51,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		50B8FD2A22A9EB0E00131967 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				5075A51322A9D93900D27DCB /* Switcher.swift */,
+				50E8813A22A610D1006C8760 /* ViewController.swift */,
+				5053383B22A986FF0096EDCC /* MainNavigationController.swift */,
+				5053383F22A9885E0096EDCC /* LoginViewController.swift */,
+				5075A50D22A9B08700D27DCB /* PostReviewController.swift */,
+				5075A51522A9D9B800D27DCB /* SettingsViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		50B8FD2B22A9EB2E00131967 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5075A51722A9DC5800D27DCB /* Session.swift */,
+				5075A51122A9C49E00D27DCB /* Datos.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		50B8FD2C22A9EB4A00131967 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				50E8814122A610D4006C8760 /* LaunchScreen.storyboard */,
+				50E8813C22A610D1006C8760 /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		50E8812C22A610D1006C8760 = {
 			isa = PBXGroup;
 			children = (
@@ -70,20 +101,13 @@
 		50E8813722A610D1006C8760 /* universe-of-reviews-ios */ = {
 			isa = PBXGroup;
 			children = (
+				50B8FD2C22A9EB4A00131967 /* Views */,
+				50B8FD2B22A9EB2E00131967 /* Models */,
+				50B8FD2A22A9EB0E00131967 /* Controllers */,
 				50E8813822A610D1006C8760 /* AppDelegate.swift */,
-				50E8813A22A610D1006C8760 /* ViewController.swift */,
-				50E8813C22A610D1006C8760 /* Main.storyboard */,
 				50E8813F22A610D4006C8760 /* Assets.xcassets */,
-				50E8814122A610D4006C8760 /* LaunchScreen.storyboard */,
 				50E8814422A610D4006C8760 /* Info.plist */,
 				5053383922A983D30096EDCC /* LoginTextField.swift */,
-				5053383B22A986FF0096EDCC /* MainNavigationController.swift */,
-				5053383F22A9885E0096EDCC /* LoginViewController.swift */,
-				5075A50D22A9B08700D27DCB /* PostReviewController.swift */,
-				5075A51122A9C49E00D27DCB /* Datos.swift */,
-				5075A51322A9D93900D27DCB /* Switcher.swift */,
-				5075A51522A9D9B800D27DCB /* SettingsViewController.swift */,
-				5075A51722A9DC5800D27DCB /* Session.swift */,
 			);
 			path = "universe-of-reviews-ios";
 			sourceTree = "<group>";

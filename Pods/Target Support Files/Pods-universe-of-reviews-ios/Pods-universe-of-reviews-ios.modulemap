@@ -1,0 +1,6 @@
+framework module Pods_universe_of_reviews_ios {
+  umbrella header "Pods-universe-of-reviews-ios-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -27,17 +27,14 @@ class LoginViewController: UIViewController {
     
     @IBAction func loginTapped(_ sender: Any) {
         
-        UserDefaults.standard.set(true, forKey: "status")
-        Switcher.updateRootVC()
-        
         let email = txtEmail.text!
         let password = txtPassword.text!
+        
         let urlAuthenticate = "https://universe-of-reviews.herokuapp.com/authenticate"
         let params = "email=\(email)&password=\(password)"
-        
         guard let url = URL(string: urlAuthenticate) else { return }
-        
         var request = URLRequest(url: url)
+        
         request.httpMethod = "POST"
         request.httpBody = params.data(using: .utf8) //Texto plpano del parametro lo convierte a data con el formato utf8
         
@@ -45,10 +42,25 @@ class LoginViewController: UIViewController {
         {(data, response, error) in
             DispatchQueue.main.async
             {
-                print(data!)
-                print(response!)
-                guard response != nil else { return }
-                self.navigateToMainInterface()
+                guard let datos = data else { return }
+                do
+                {
+                    let token: Token = try JSONDecoder().decode(Token.self, from: datos)
+                    if (token.user_id == nil) {
+                        
+                    }
+                    else {
+                        Session.shared.setUserId(token.user_id!)
+                        Session.shared.setJWT(token.auth_token!)
+                        UserDefaults.standard.set(true, forKey: "status")
+                        self.navigateToMainInterface()
+                    }
+                    
+                }
+                catch let jsonError
+                {
+                    print(jsonError)
+                }
             }
         }.resume()
     }

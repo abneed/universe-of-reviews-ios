@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import AudioToolbox
 
 class PostReviewController: UIViewController {
     
@@ -36,7 +37,7 @@ class PostReviewController: UIViewController {
     }
     
     @IBAction func btnPublishReview(_ sender: Any) {
-        let user_id = 4
+        let user_id = Session.shared.getUserId()
         let movie_title = txtMovieTitle.text!
         let content = txtContent.text!
         let directors = txtDirectors.text!
@@ -52,15 +53,14 @@ class PostReviewController: UIViewController {
         
         var request = URLRequest(url: url)
         request.httpMethod = "POST"
-        request.httpBody = params.data(using: .utf8) //Texto plpano del parametro lo convierte a data con el formato utf8
+        request.httpBody = params.data(using: .utf8)
+        request.setValue(Session.shared.getJWT(), forHTTPHeaderField: "Authorization")
         
         URLSession.shared.dataTask(with: request)
         {(data, response, error) in
             DispatchQueue.main.async
-                {
-                    print(data!)
-                    print(response!)
-                    guard response != nil else { return }
+            {
+                AudioServicesPlayAlertSound(SystemSoundID(1008))
             }
             }.resume()
         

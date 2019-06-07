@@ -459,7 +459,7 @@
                                 <rect key="frame" x="0.0" y="313" width="375" height="310"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="6Ck-DG-wXm">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ComentsViewCell" id="6Ck-DG-wXm" customClass="ComentsViewCell" customModule="universe_of_reviews_ios" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="170"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="ComentsViewCell" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="6Ck-DG-wXm" id="I5E-mW-AWv" customClass="ComentsViewCell" customModule="universe_of_reviews_ios" customModuleProvider="target">

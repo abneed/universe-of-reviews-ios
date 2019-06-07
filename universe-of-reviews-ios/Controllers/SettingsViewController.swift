@@ -82,12 +82,12 @@ class SettingsViewController: UIViewController {
         let email = txtEmail.text!
         let password = txtPassword.text!
         let password_confirmation = txtPasswordConfirmation.text!
-        var params = "user[first_name]='\(first_name)'&user[last_name]='\(last_name)'&user[birth_date]=\(birth_date)&user[weight]=\(weight)&user[height]=\(height)&user[email]=\(email)"
+        var params = "user[first_name]=\(first_name)&user[last_name]=\(last_name)&user[birth_date]=\(birth_date)&user[weight]=\(weight)&user[height]=\(height)&user[email]=\(email)"
         if (password != password_confirmation)  {
             return
         }
         else if (password != "" && password_confirmation != "") {
-            params = "user[first_name]='\(first_name)'&user[last_name]='\(last_name)'&user[birth_date]=\(birth_date)&user[weight]=\(weight)&user[height]=\(height)&user[email]=\(email)&user[password]=\(password)&[password_confirmation]=\(password_confirmation)"
+            params = "user[first_name]=\(first_name)&user[last_name]=\(last_name)&user[birth_date]=\(birth_date)&user[weight]=\(weight)&user[height]=\(height)&user[email]=\(email)&user[password]=\(password)&[password_confirmation]=\(password_confirmation)"
         }
         
         let urlUserPut = "https://universe-of-reviews.herokuapp.com/users/\(user_id)"

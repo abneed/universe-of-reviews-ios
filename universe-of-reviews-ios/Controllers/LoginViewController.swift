@@ -47,7 +47,13 @@ class LoginViewController: UIViewController {
                 {
                     let token: Token = try JSONDecoder().decode(Token.self, from: datos)
                     if (token.user_id == nil) {
-                        
+                        let alerta = UIAlertController(title: "Error", message: "No se pudo iniciar sesión.\nIntentelo de nuevo.", preferredStyle: .alert)
+                        let btnAceptar = UIAlertAction(title: "Aceptar", style: .destructive)
+                        {
+                            (action: UIAlertAction) in
+                        }
+                        alerta.addAction(btnAceptar)
+                        self.present(alerta, animated: true, completion: nil)
                     }
                     else {
                         Session.shared.setUserId(token.user_id!)
